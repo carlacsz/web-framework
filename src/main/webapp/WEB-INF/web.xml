@@ -1,0 +1,12 @@
+<web-app>
+<display-name>Web Framework Test</display-name>
+<servlet>
+<servlet-name>WebFwTest</servlet-name>
+<servlet-class>com.webfw.RequestRouterServlet</servlet-class>
+<load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+<servlet-name>WebFwTest</servlet-name>
+<url-pattern>/*</url-pattern>
+</servlet-mapping>
+</web-app>
