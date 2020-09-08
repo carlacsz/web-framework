@@ -25,15 +25,15 @@ public abstract class RestCommand extends WebCommand {
         }
     }
 
-    protected void get(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException {
+    protected void get(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
     }
 
-    protected void post(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException {
+    protected void post(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
     }
 
-    protected void put(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException {
+    protected void put(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
     }
 
-    protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException {
+    protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
     }
 }

@@ -19,7 +19,7 @@ public abstract class HtmlCommand extends WebCommand {
                 RequestDispatcher dispatcher = req.getRequestDispatcher(getJspPath());
                 dispatcher.forward(req, resp);
             } catch (ServletException e) {
-                e.printStackTrace();
+                throw new ApplicationException(e.getMessage(), 500);
             } catch (NullPointerException e) {
                 throw new ApplicationException("Not valid page found", 500);
             }

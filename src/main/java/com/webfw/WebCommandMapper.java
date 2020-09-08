@@ -15,13 +15,11 @@ class WebCommandMapper {
     public WebCommand getCommand(HttpServletRequest request) throws ApplicationException {
         String reqName = request.getPathInfo();
         if (reqName == null) {
-            LOGGER.info("Page index.jsp not defined");
-            throw new ApplicationException("Page index.jsp not defined", 404);
+            return new HomeCommand();
         } else {
             reqName = reqName.replace("/", "");
             if (reqName.equals("")) {
-                LOGGER.info("Page index.jsp not defined");
-                throw new ApplicationException("Page index.jsp not defined", 404);
+                return new HomeCommand();
             } else {
                 try {
                     String className = getCompleteClassName(reqName);

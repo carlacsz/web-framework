@@ -26,8 +26,7 @@ public class RequestRouterServlet extends HttpServlet {
             webCommand.execute(req, resp);
         } catch (ApplicationException e) {
             LOGGER.info(e.getMessage());
-            int statusCode = e.getStatusCode() != 0 ? e.getStatusCode() : 500;
-            resp.sendError(statusCode, e.getMessage());
+            resp.sendError(e.getStatusCode(), e.getMessage());
         }
     }
 }
