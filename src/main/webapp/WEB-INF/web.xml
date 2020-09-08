@@ -7,10 +7,9 @@
             <param-name>basePackage</param-name>
             <param-value>com.webfwtest</param-value>
         </init-param>
-        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>WebFwTest</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/router/*</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -6,6 +6,10 @@ import com.webfw.commands.PictureCommand;
 public class PhotoCommand extends PictureCommand {
     @Override
     protected String getImagePath() {
-        return getParameters().get("n");
+        String path = getParameters().get("n");
+        if(path != null){
+            return "/resources/" + path;
+        }
+        return null;
     }
 }
