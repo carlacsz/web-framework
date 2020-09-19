@@ -5,7 +5,7 @@
         <servlet-class>com.webfw.RequestRouterServlet</servlet-class>
         <init-param>
             <param-name>basePackage</param-name>
-            <param-value>com.webfwtest</param-value>
+            <param-value>com.webfwdynamicform.commands</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>

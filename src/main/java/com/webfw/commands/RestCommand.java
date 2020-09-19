@@ -26,14 +26,18 @@ public abstract class RestCommand extends WebCommand {
     }
 
     protected void get(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
+        throw new ApplicationException("Method not supported for this resource", 501);
     }
 
     protected void post(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
+        throw new ApplicationException("Method not supported for this resource", 501);
     }
 
     protected void put(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
+        throw new ApplicationException("Method not supported for this resource", 501);
     }
 
     protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ApplicationException, IOException {
+        throw new ApplicationException("Method not supported for this resource", 501);
     }
 }
